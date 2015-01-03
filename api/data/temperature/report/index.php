@@ -1,6 +1,7 @@
 <?php
 
-require "../../../../includes/mysqlconnect.php";
+//require "../../../../includes/mysqlconnect.php";
+require_once "../../../includes/mysqlconnect.php";
 
 $temperature = $_GET["temperature"];
 $temperature_unit = $_GET["temperature_unit"];

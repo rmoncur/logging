@@ -1,6 +1,7 @@
 <?php
 
-require_once  $_SERVER['DOCUMENT_ROOT'] . "/includes/mysqlconnect.php";
+//require_once  $_SERVER['DOCUMENT_ROOT'] . "/includes/mysqlconnect.php";
+require_once "../../../../includes/mysqlconnect.php";
 
 $start = $_GET["start"];
 $end = $_GET["end"];

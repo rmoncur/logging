@@ -1,6 +1,7 @@
 <?php
 
-require_once  $_SERVER['DOCUMENT_ROOT'] . "/includes/mysqlconnect.php";
+//require_once  $_SERVER['DOCUMENT_ROOT'] . "/includes/mysqlconnect.php";
+require_once "../../../includes/mysqlconnect.php";
 
 //Getting the latest temperature
 $result = mysql_query("SELECT * FROM temperature WHERE sensor = 'DHT11' ORDER BY created_at DESC LIMIT 1");

@@ -71,7 +71,7 @@ function myController($scope,$http){
 	$scope.getData = function(){
 		
 		//Getting all data
-		$http({method: 'GET', url: '/api/data/all/index.php'}).
+		$http({method: 'GET', url: 'api/data/all/index.php'}).
 		success(function(data, status, headers, config) {
 			
 			//Processing highcharts data
@@ -95,7 +95,7 @@ function myController($scope,$http){
 		var curr_year = d.getFullYear();
 		var dStringEnd = curr_year + "-" + curr_month + "-" + curr_date;
 		var dStringStart = curr_year + "-" + curr_month + "-" + (curr_date-2);
-		var url = '/api/data/temperature/bounded/index.php?start='+dStringStart+'&end='+dStringEnd+'&sensor=DHT11';
+		var url = 'api/data/temperature/bounded/index.php?start='+dStringStart+'&end='+dStringEnd+'&sensor=DHT11';
 		console.log("Date String",dStringStart,dStringEnd,url);
 		
 		$http({method: 'GET', url: url}).

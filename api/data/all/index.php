@@ -1,6 +1,6 @@
 <?php
 
-require_once  $_SERVER['DOCUMENT_ROOT'] . "/includes/mysqlconnect.php";
+require_once "../../../includes/mysqlconnect.php";
 
 //Grabbing averages
 $result = mysql_query("SELECT sensor, AVG(temperature) AS avg_c, (AVG(temperature) * 1.8 + 32) AS avg_f , AVG(humidity) AS avg_humidity, DATE(created_at) AS date, HOUR(created_at) AS hour 
