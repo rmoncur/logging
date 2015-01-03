@@ -9,11 +9,10 @@ $humidity_unit = $_GET["humidity_unit"];
 $sensor = $_GET["sensor"];
 
 
-if( !empty($_GET["temperature"]) && !empty($_GET["humidity"]) && !empty($_GET["sensor"]) && !empty($_GET["temperature_unit"]) && !empty($_GET["humidity_unit"])){
+if( !empty($_GET["temperature"])){
 	$query = "INSERT INTO temperature (temperature,humidity,sensor,temperature_unit,humidity_unit) VALUES($temperature,$humidity,'$sensor','$temperature_unit','$humidity_unit')";
 	$r = mysql_query($query);
 }
-
 //execute the SQL query and return records
 //$result = mysql_query("SELECT * FROM temperature");
 
